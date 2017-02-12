@@ -1,0 +1,4 @@
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata\bin\Debug\WalletKata.dll
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata\bin\Debug\WalletKata.pdb
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata\obj\Debug\WalletKata.dll
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata\obj\Debug\WalletKata.pdb

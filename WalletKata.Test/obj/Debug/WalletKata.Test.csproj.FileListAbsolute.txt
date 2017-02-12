@@ -1,0 +1,9 @@
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\bin\Debug\WalletKata.Test.dll
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\bin\Debug\WalletKata.Test.pdb
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\bin\Debug\nunit.framework.dll
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\bin\Debug\WalletKata.dll
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\bin\Debug\WalletKata.pdb
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\bin\Debug\nunit.framework.xml
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\obj\Debug\WalletKata.Test.csprojResolveAssemblyReference.cache
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\obj\Debug\WalletKata.Test.dll
+C:\Users\Evan\Desktop\RefactoringKata-master\WalletKata.Test\obj\Debug\WalletKata.Test.pdb
