@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using WalletKata.Users;
 using WalletKata.Exceptions;
 
@@ -7,40 +7,18 @@ namespace WalletKata.Wallets
 {
     public class WalletService
     {
-        public List<Wallet> GetWalletsByUser(User user, User userWallet, bool isUserLogged)
+        private User _loggedUser => UserSession.GetInstance().GetLoggedUser();
+
+        public List<Wallet> GetWalletsByUser(User user, WalletDao walletDao)
         {
-            try
+            if (_loggedUser != null)
             {
-                User loggedUser = UserSession.GetInstance().GetLoggedUser(isUserLogged);
-                bool isFriend = false;
-
-                if (loggedUser != null)
-                {
-                    foreach (User friend in user.GetFriends())
-                    {
-                        if (!friend.Equals(userWallet)) continue;
-                        isFriend = true;
-                        break;
-                    }
-
-                    if (isFriend)
-                    {
-                        return WalletDAO.FindWalletsByUser(user);
-                    }
-
-                    return new List<Wallet>();
-                }
-                else
-                {
-                    throw new UserNotLoggedInException();
-                }
+                return user.GetFriends().Contains(_loggedUser) ? walletDao.FindWalletsByUser(user) : new List<Wallet>();
             }
-            catch (UserNotLoggedInException ex)
+            else
             {
-                Console.WriteLine(ex.DisplayError());
-                throw;
-            }
-            
+                throw new UserNotLoggedInException();
+            }      
         }         
     }
 }

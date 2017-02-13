@@ -2,6 +2,5 @@
 {
     public class Wallet
     {
-        public string Label;
     }
 }
